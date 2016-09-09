@@ -1,0 +1,16 @@
+[
+{
+  "modid": "modbase",
+  "name": "Mod Base",
+  "description": "A Mod Base for all of TheDragonTeam's Mods",
+  "version": "1.0.0",
+  "mcversion": "1.10.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["sokratis12GR, Mortiz30"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

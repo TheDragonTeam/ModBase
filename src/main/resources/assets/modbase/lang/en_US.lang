@@ -1,0 +1,19 @@
+#en_US.lang File
+
+#CREATIVE TABS
+itemGroup.modbase.mod_base=Mod Base
+
+#ITEMS
+item.item_base.name=Item Base
+
+#BLOCKS
+tile.block_base.name=Block Base
+
+#CONFIG GUI
+gui.modbase.config.title=Mod Base Configuration
+
+#CONSOLE LOG -- As part of console output, these entries shall not be translated. --
+info.modbase.console.config.refresh=Refreshing configuration file
+info.modbase.console.load.preInit=Begin Pre-initialization
+info.modbase.console.load.init=Begin Initialization
+info.modbase.console.load.postInit=Begin Post-initialization

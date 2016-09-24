@@ -46,7 +46,7 @@ public class ModBase {
     @SidedProxy(clientSide = CLIENTPROXY, serverSide = COMMONPROXY)
     public static CommonProxy proxy;
 
-    public static CreativeTabs TAB_MOD_BASE = new MBTab(CreativeTabs.getNextID(), ModBase.MODID, ModBase.MODID + "." + "mod_base", 0);
+    public static CreativeTabs mbTab = new MBTab(CreativeTabs.getNextID(), ModBase.MODID, ModBase.MODID + "." + "mod_base", 0);
 
     public static Logger logger = LogManager.getLogger(ModBase.MODNAME);
 

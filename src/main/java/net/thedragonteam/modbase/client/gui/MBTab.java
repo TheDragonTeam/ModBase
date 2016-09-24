@@ -31,7 +31,7 @@ public class MBTab extends CreativeTabs {
     }
 
     public static void initialize() {
-        iconArmorPlus = new ItemStack(ModItems.ITEM_BASE);
+        iconArmorPlus = new ItemStack(ModItems.exampleItem);
     }
 
     public boolean hasSearchBar() {
@@ -41,7 +41,7 @@ public class MBTab extends CreativeTabs {
     @Override
     @SideOnly(Side.CLIENT)
     public ItemStack getIconItemStack() {
-        return new ItemStack(ModItems.ITEM_BASE);
+        return new ItemStack(ModItems.exampleItem);
     }
 
     @Override

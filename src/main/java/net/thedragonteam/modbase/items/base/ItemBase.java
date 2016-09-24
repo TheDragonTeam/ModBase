@@ -19,12 +19,11 @@ public class ItemBase extends Item {
         setRegistryName(name);
         setUnlocalizedName(name);
         GameRegistry.register(this);
-        this.setCreativeTab(ModBase.TAB_MOD_BASE);
+        this.setCreativeTab(ModBase.mbTab);
     }
 
     @SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
-
     }
 }

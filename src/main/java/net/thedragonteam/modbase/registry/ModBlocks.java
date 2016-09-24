@@ -5,29 +5,28 @@
 package net.thedragonteam.modbase.registry;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.thedragonteam.modbase.blocks.base.BlockBase;
+import net.thedragonteam.modbase.blocks.ExampleBlock;
 
 public class ModBlocks {
 
-    public static Block BLOCK_BASE;
+    public static Block exmpleBlock;
 
     public static void init() {
-        BLOCK_BASE = new BlockBase(Material.WOOD, "block_base").setRegistryName("block_base");
+        exmpleBlock = new ExampleBlock().setRegistryName("example_block");
     }
 
     public static void register() {
-        registerBlock(BLOCK_BASE);
+        registerBlock(exmpleBlock);
     }
 
     public static void registerRenders() {
-        registerRender(BLOCK_BASE);
+        registerRender(exmpleBlock);
     }
 
     public static void registerBlock(Block block) {

@@ -4,6 +4,6 @@
 		"transform": "forge:default-block"
 	},
 	"variants": {
-		"normal": { "model": "modbase:block_base" }
+		"normal": { "model": "modbase:example_block" }
 	}
 }

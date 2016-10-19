@@ -22,7 +22,6 @@ import net.thedragonteam.modbase.registry.ModBlocks;
 import net.thedragonteam.modbase.registry.ModItems;
 import net.thedragonteam.modbase.registry.ModRecipes;
 import net.thedragonteam.modbase.resources.GlobalEventsModBase;
-import net.thedragonteam.thedragonlib.TheDragonLib;
 import net.thedragonteam.thedragonlib.config.ModConfigProcessor;
 import net.thedragonteam.thedragonlib.util.LogHelper;
 import net.thedragonteam.thedragonlib.util.TextHelper;
@@ -38,7 +37,8 @@ public class ModBase {
     public static final String MODID = "modbase";
     public static final String VERSION = "1.0.0";
     public static final String MODNAME = "Mod Base";
-    public static final String DEPEND = "required-after:thedragoncore@[" + TheDragonLib.VERSION + ",);";
+    public static final String LIBVERSION = "1.10.2-1.0.3.0";
+    public static final String DEPEND = "required-after:thedragonlib@[" + ModBase.LIBVERSION + ",);";
     public static final String CLIENTPROXY = "net.thedragonteam.modbase.proxy.ClientProxy";
     public static final String COMMONPROXY = "net.thedragonteam.modbase.proxy.CommonProxy";
     public static final String GUIFACTORY = "net.thedragonteam.modbase.client.gui.ConfigGuiFactory";

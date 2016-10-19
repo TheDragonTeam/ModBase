@@ -7,9 +7,9 @@ package net.thedragonteam.modbase.proxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.thedragonteam.core.util.LogHelper;
 import net.thedragonteam.modbase.ModBase;
 import net.thedragonteam.modbase.client.gui.MBTab;
+import net.thedragonteam.thedragonlib.util.LogHelper;
 
 public class CommonProxy {
 

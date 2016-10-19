@@ -6,9 +6,9 @@ package net.thedragonteam.modbase.registry;
 
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.thedragonteam.core.util.LogHelper;
 import net.thedragonteam.modbase.items.ExampleItem;
 import net.thedragonteam.modbase.items.base.ItemBase;
+import net.thedragonteam.thedragonlib.util.LogHelper;
 
 public class ModItems {
 

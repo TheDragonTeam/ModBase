@@ -10,7 +10,6 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.thedragonteam.modbase.ModBase;
 import net.thedragonteam.modbase.registry.ModBlocks;
 import net.thedragonteam.modbase.registry.ModItems;
 
@@ -26,17 +25,13 @@ public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         super.preInit(event);
         MinecraftForge.EVENT_BUS.register(this);
+        ModItems.initModels();
+        ModBlocks.initModels();
     }
 
     @Override
     public void postInit(FMLPostInitializationEvent event) {
         super.postInit(event);
-    }
-
-    @Override
-    public void registerRenderers(ModBase ins) {
-        ModItems.initModels();
-        ModBlocks.registerRenders();
     }
 }
 

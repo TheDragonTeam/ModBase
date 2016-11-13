@@ -12,12 +12,14 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.thedragonteam.modbase.ModBase;
 
+import static net.thedragonteam.modbase.util.Utils.setName;
+
 
 public class ItemBase extends Item {
 
     public ItemBase(String name) {
         setRegistryName(name);
-        setUnlocalizedName(name);
+        setUnlocalizedName(setName(name));
         GameRegistry.register(this);
         this.setCreativeTab(ModBase.mbTab);
     }

@@ -7,6 +7,7 @@ package net.thedragonteam.modbase.util;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.discovery.ASMDataTable;
+import net.thedragonteam.modbase.ModBase;
 
 import java.util.Set;
 
@@ -30,4 +31,7 @@ public final class Utils {
         }
     }
 
+    public static String setName(String name) {
+        return ModBase.MODID + "." + name;
+    }
 }

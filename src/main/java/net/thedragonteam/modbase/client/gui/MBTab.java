@@ -26,7 +26,7 @@ public class MBTab extends CreativeTabs {
         super(id, modid);
         this.label = label;
         this.tab = tab;
-        setBackgroundImageName(ModBase.MODID + ".png"); // Automagically has tab_ applied to it. Make sure you change the texture name.
+        setBackgroundImageName(ModBase.MODID + ".png"); // Automatically has tab_ applied to it. Make sure you change the texture name.
 
     }
 

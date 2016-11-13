@@ -14,7 +14,6 @@ public class ModRecipes {
     }
 
     public static void addShapedRecipes() {
-        GameRegistry.addRecipe(new ItemStack(ModItems.exampleItem, 1), "XXX", "XBX", "XXX", 'B', ModBlocks.exmpleBlock);
-
+        GameRegistry.addRecipe(new ItemStack(ModItems.exampleItem, 1), "XXX", "XBX", "XXX", 'B', ModBlocks.exampleBlock);
     }
 }

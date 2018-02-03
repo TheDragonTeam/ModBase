@@ -4,10 +4,10 @@
 itemGroup.modbase.mod_base=Mod Base
 
 #ITEMS
-item.item_base.name=Item Base
+item.modbase.item_base.name=Item Base
 
 #BLOCKS
-tile.block_base.name=Block Base
+tile.modbase.block_base.name=Block Base
 
 #CONFIG GUI
 gui.modbase.config.title=Mod Base Configuration

@@ -5,11 +5,12 @@
 package net.thedragonteam.modbase.util;
 
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.discovery.ASMDataTable;
-import net.thedragonteam.modbase.ModBase;
+import net.minecraft.util.ResourceLocation;
 
-import java.util.Set;
+import java.util.Objects;
+
+import static java.lang.String.format;
+import static net.thedragonteam.modbase.ModBase.MODID;
 
 public final class Utils {
 
@@ -19,19 +20,44 @@ public final class Utils {
         return stack;
     }
 
-    public static void registerHandlers(Set<ASMDataTable.ASMData> eventHandlers) {
-        for (ASMDataTable.ASMData data : eventHandlers) {
-            try {
-                Class<?> handlerClass = Class.forName(data.getClassName());
-                Object handlerImpl = handlerClass.newInstance();
-                MinecraftForge.EVENT_BUS.register(handlerImpl);
-            } catch (Exception e) {
-                // No-op
-            }
-        }
+    public static String setName(String name) {
+        return MODID + "." + name;
     }
 
-    public static String setName(String name) {
-        return ModBase.MODID + "." + name;
+    public static ResourceLocation setRL(String path) {
+        return new ResourceLocation(MODID, path);
     }
+
+    public static String setLocation(String path) {
+        return format("%s:%s", MODID, path);
+    }
+
+    public static boolean isNotEmpty(ItemStack stack) {
+        return !stack.isEmpty();
+    }
+
+    public static boolean isEmpty(ItemStack stack) {
+        return stack.isEmpty();
+    }
+
+    public static boolean isNotNull(Object object) {
+        return object != null;
+    }
+
+    public static boolean areNotNull(Object object1, Object object2) {
+        return object1 != null && object2 != null;
+    }
+
+    public static boolean isNotNullNorEmpty(String object) {
+        return isNotNull(object) && !Objects.equals(object, "");
+    }
+
+    public static boolean isNull(Object object) {
+        return object == null;
+    }
+
+    public static boolean isNullOrEmpty(String object) {
+        return isNull(object) || Objects.equals(object, "");
+    }
+
 }

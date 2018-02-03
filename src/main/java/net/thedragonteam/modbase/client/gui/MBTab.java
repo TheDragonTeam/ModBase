@@ -5,7 +5,6 @@
 package net.thedragonteam.modbase.client.gui;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -44,10 +43,10 @@ public class MBTab extends CreativeTabs {
         return new ItemStack(ModItems.exampleItem);
     }
 
+
     @Override
-    @SideOnly(Side.CLIENT)
-    public Item getTabIconItem() {
-        return getIconItemStack().getItem();
+    public ItemStack getTabIconItem() {
+        return getIconItemStack();
     }
 
     @Override

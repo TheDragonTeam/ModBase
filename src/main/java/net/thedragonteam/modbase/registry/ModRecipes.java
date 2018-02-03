@@ -5,7 +5,9 @@
 package net.thedragonteam.modbase.registry;
 
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraft.util.ResourceLocation;
+
+import static net.minecraftforge.fml.common.registry.GameRegistry.addShapedRecipe;
 
 public class ModRecipes {
 
@@ -14,6 +16,9 @@ public class ModRecipes {
     }
 
     public static void addShapedRecipes() {
-        GameRegistry.addRecipe(new ItemStack(ModItems.exampleItem, 1), "XXX", "XBX", "XXX", 'B', ModBlocks.exampleBlock);
+        addShapedRecipe(
+            new ResourceLocation("example_item_recipe"), new ResourceLocation("examples"),
+            new ItemStack(ModItems.exampleItem, 1), "   ", " B ", "   ", 'B', ModBlocks.exampleBlock
+        );
     }
 }

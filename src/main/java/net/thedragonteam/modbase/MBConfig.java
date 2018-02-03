@@ -4,14 +4,14 @@
 
 package net.thedragonteam.modbase;
 
-import net.thedragonteam.thedragonlib.config.ModConfigProperty;
+import net.minecraftforge.common.config.Config;
+import net.minecraftforge.common.config.Config.Comment;
 
-/**
- * net.thedragonteam.modbase
- * MobSettings created by sokratis12GR on 7/31/2016 11:50 AM.
- */
+import static net.thedragonteam.modbase.ModBase.MODID;
+
+@Config(modid = MODID, category = "example")
 public class MBConfig {
 
-    @ModConfigProperty(category = "Example", name = "exampleConfig", comment = "This is an example comfig")
+    @Comment({"This is an example config"})
     public static int exampleConfig = 1;
 }
